@@ -214,7 +214,11 @@ __pycache__/
 *.pyc
 *.pyo
 # Données et modèles
-data/
+#data/
 models/
 # Notebooks checkpoints
 *.ipynb_checkpoints/
+#Git doit ignorer tout le dossier data/, sauf les fichiers .dvc qui se trouvent dedans
+!data/*.dvc
+# Ignorer les fichiers CSV
+data/*.csv
